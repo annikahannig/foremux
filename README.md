@@ -17,7 +17,7 @@ In you project directory just run `foremux`.
 
 You can specify a different Procfile as first argument.
 
-_CAVEAT:_ `foremux` will split and reorder all panes and will
+**CAVEAT:** `foremux` will split and reorder all panes and will
 run the commands as specified in the Procfile.
 
 Running `foremux` in an empty window is advised.
