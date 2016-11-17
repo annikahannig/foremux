@@ -11,7 +11,6 @@ import tmux
 
 from procfile import Procfile
 
-
 def main():
     """Get Procfile, split windows, launch procs"""
     filename = 'Procfile'
@@ -24,8 +23,11 @@ def main():
 
     pfile = Procfile(filename)
 
-    print(pfile.procs)
+    # Prepare layout
+    tmux.split_n(len(pfile.procs))
 
+    for i, proc in enumerate(pfile.procs):
+        tmux.run_command(proc.command, i)
 
 
 if __name__ == '__main__':
