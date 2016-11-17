@@ -5,3 +5,7 @@ __pycache__
 *.swp
 *.swo
 
+build/
+dist/
+*.egg-info
+
