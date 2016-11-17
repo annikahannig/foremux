@@ -63,5 +63,5 @@ def split_n(panes):
         split_h()
 
     # Reorder panes
-    next_layout()
+    tiled_layout()
 
