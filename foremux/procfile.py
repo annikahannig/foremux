@@ -3,7 +3,7 @@ Read a procfile and return list of procs.
 """
 
 import re
-from .proc import Proc
+from proc import Proc
 
 class Procfile(object):
     """Handle a Procfile"""
@@ -16,7 +16,7 @@ class Procfile(object):
         Test if the line is a proc description,
         identified by a <name>: <command> pair.
         """
-        match = PROC_RE.match(line)
+        match = self.PROC_RE.match(line)
         if not match:
             return None
 
@@ -25,7 +25,8 @@ class Procfile(object):
 
     def _read_procs(self, lines):
         """Get procfile procs"""
-        return [p for p in (_parse_proc(l) for l in lines) if p is not None]
+        return [p for p in (self._parse_proc(l) for l in lines)
+                if p is not None]
 
 
     def _read_meta(self, lines):
