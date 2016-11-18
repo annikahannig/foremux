@@ -13,7 +13,7 @@ long_description = open(
 setup(
     name='foremux',
     author='Matthias Hannig',
-    version='0.1.1',
+    version='0.2.5',
     license='MIT',
     url='https://github.com/mhannig/foremux',
     description='Launch a Procfile using tmux',
