@@ -15,12 +15,20 @@ To install this littel tool, just clone this repository and run
 
 In you project directory just run `foremux`.
 
-You can specify a different Procfile as first argument.
+More advanced stuff:
+
+    Options:
+
+        -f Procfile    specify a Procfile (e.g. for development)
+
+    Commands:
+
+        start          launch the Procfile
+        stop           stop all services
+
 
 **CAVEAT:** `foremux` will split and reorder all panes and will
 run the commands as specified in the Procfile.
 
 Running `foremux` in an empty window is advised.
-
-
 
