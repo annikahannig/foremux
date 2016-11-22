@@ -8,9 +8,9 @@ Read procfile, split windows, launch procs
 import sys
 import os
 
-import tmux
+from foremux import tmux
 
-from procfile import Procfile
+from foremux.procfile import Procfile
 
 
 def _print_usage():

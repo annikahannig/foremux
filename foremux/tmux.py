@@ -22,7 +22,7 @@ def select_pane(pane_id):
 def list_panes():
     """Returns a list of panes"""
     res = subprocess.check_output(['tmux', 'list-panes'])
-    return res.strip().split('\n')
+    return res.strip().decode().split('\n')
 
 
 def send_keys(keys, pane_id=0):
