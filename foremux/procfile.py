@@ -3,7 +3,7 @@ Read a procfile and return list of procs.
 """
 
 import re
-from proc import Proc
+from foremux.proc import Proc
 
 class Procfile(object):
     """Handle a Procfile"""
